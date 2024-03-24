@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <p>本の一覧</p>
-  </div>
+  </v-container>
 </template>

@@ -18,7 +18,7 @@ const NAVIGATION_ITEMS = [
     <v-layout-item class="text-end" model-value position="bottom" size="100">
       <div class="ma-4">
         <v-menu>
-          <template v-slot:activator="{ props }">
+          <template #activator="{ props }">
             <v-btn icon="" size="x-large" color="primary" v-bind="props">
               <v-icon>mdi-open-in-new</v-icon>
               <v-overlay
@@ -27,7 +27,11 @@ const NAVIGATION_ITEMS = [
                 scroll-strategy="close"
               >
                 <v-list>
-                  <v-list-item v-for="item in NAVIGATION_ITEMS" :key="item.id" :href="item.href">
+                  <v-list-item
+                    v-for="item in NAVIGATION_ITEMS"
+                    :key="item.id"
+                    :href="item.href"
+                  >
                     <v-list-item-title>{{ item.label }}</v-list-item-title>
                   </v-list-item>
                 </v-list>
@@ -37,8 +41,6 @@ const NAVIGATION_ITEMS = [
         </v-menu>
       </div>
     </v-layout-item>
-    <v-container>
-      <slot />
-    </v-container>
+    <slot />
   </v-app>
 </template>
