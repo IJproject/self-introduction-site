@@ -49,6 +49,7 @@ const ACADEMICS_DATA = [
       <v-tab> Others </v-tab>
     </v-tabs>
     <v-container>
+      <div>メモ：breadcrumb使う？？</div>
       <h1>タイトル</h1>
       <section v-for="academics in ACADEMICS_DATA" :key="academics.id">
         <h2>{{ academics.title }}</h2>

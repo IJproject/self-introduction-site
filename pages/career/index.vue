@@ -23,6 +23,12 @@ const CAREER_TIMELINE_ITEMS = [
       </v-card>
     </section>
     <section>
+      <h2>保有資格</h2>
+      <v-card class="elevation-2">
+        <v-card-text> こんにちは。私は〇〇と申します。 </v-card-text>
+      </v-card>
+    </section>
+    <section>
       <h2>経歴</h2>
       <v-timeline>
         <v-timeline-item
